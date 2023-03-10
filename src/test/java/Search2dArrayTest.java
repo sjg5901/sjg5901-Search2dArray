@@ -1,4 +1,6 @@
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class Search2dArrayTest {
@@ -18,6 +20,7 @@ public class Search2dArrayTest {
         int target = 2;
         boolean expected = true;
         boolean actual = sat.search(input,target);
+        assertEquals(expected, actual);
     }
     /**
      * The 2d array here contains 5, so search should return true.
@@ -33,6 +36,7 @@ public class Search2dArrayTest {
         int target = 5;
         boolean expected = true;
         boolean actual = sat.search(input,target);
+        assertEquals(expected, actual);
     }
     /**
      * The 2d array here contains 8, so search should return true.
@@ -47,6 +51,7 @@ public class Search2dArrayTest {
         int target = 8;
         boolean expected = true;
         boolean actual = sat.search(input,target);
+        assertEquals(expected, actual);
     }
     /**
      * The 2d array here does not contain 0, so search should return false.
@@ -61,6 +66,7 @@ public class Search2dArrayTest {
         int target = 0;
         boolean expected = false;
         boolean actual = sat.search(input,target);
+        assertEquals(expected, actual);
     }
     /**
      * The 2d array here does not contain 10, so search should return false.
@@ -76,5 +82,6 @@ public class Search2dArrayTest {
         int target = 10;
         boolean expected = false;
         boolean actual = sat.search(input,target);
+        assertEquals(expected, actual);
     }
 }
