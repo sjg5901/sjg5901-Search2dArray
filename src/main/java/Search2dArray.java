@@ -10,6 +10,17 @@ public class Search2dArray {
      * @return true if nums contains target, and false otherwise.
      */
     public boolean search(int[][] nums, int target){
+        
+        // could binary search each individual array within nums for more efficiency
+        // for sake of simplicity and the challenge, uses primitive method of nested for loops
+        
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[i].length; j++) {
+                if (nums[i][j] == target) return true;
+            }
+
+        }
+
         return false;
     }
 }
